@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pure JS CPU Emulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧠 Pure JS CPU Emulator</h1>
+  <div class="grid">
+    <div>
+      <h3>Assembly Code</h3>
+      <textarea id="code">LOAD R1, 5
+LOAD R2, 10
+ADD R3, R1, R2
+JMP 0</textarea>
+      <button onclick="run()">Assemble & Run</button>
+    </div>
+    <div>
+      <h3>Debugger</h3>
+      <pre id="output"></pre>
+    </div>
+  </div>
+  <script src="engine.js"></script>
+</body>
+</html>
